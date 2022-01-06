@@ -17,9 +17,7 @@ function App() {
     });
   }
  
-  useEffect(()=>{
-    getAllPokemons();
-  },[])
+  useEffect(()=>{getAllPokemons()},[]); // eslint-disable-line react-hooks/exhaustive-deps
   
 
   return (
