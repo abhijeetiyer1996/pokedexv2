@@ -1,0 +1,114 @@
+:root{
+    --shadows: 1px 1px 1px 2px rgba(0,0,0,0.1);
+    --borders: 1px solid rgba(0,0,0,0.2);
+    --font: 'Alegreya Sans SC', sans-serif;
+}
+
+.pokeInfo{
+    width: 40%;
+    height: 100%;
+    border-right: var(--borders);
+    box-shadow: var(--shadows) ;
+    overflow: hidden;   
+}
+@media only screen and (max-width:50em){
+    .pokeInfo{
+        position: fixed;
+        width: 0%;
+        background: #f7f7f7;
+        z-index: 999;
+    }
+}
+
+.pokeCards{
+    width: 60%;
+    position: relative;
+    overflow: auto;
+    background-color: #f7f7f7;
+    
+}
+@media only screen and (max-width:50em){
+    .pokeCards{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:50em){
+    .pokeCards{
+        width: 100%;
+    }
+}
+.pokeCardsContainer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.buttonContainer{
+    width: 30%;
+    height: 7%;
+    margin: auto;
+    margin-top: 5px;
+}
+.loadBtn{
+    width: 100%;
+    height:70%;
+    display: block;
+    margin:0 auto;
+    margin-top: 10px;
+    border: var(--borders);
+    border-radius : 3px;
+    font-family: var(--font); 
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#f7f7f7;
+    transition: 0.2s all ease-in-out; 
+}
+.loadBtn:hover{
+    background-color: #CCC;
+    color:#000;
+    transition: all 0.2s ease-in-out;
+}
+.heading{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 10%;
+    width: 94%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.title{
+    margin-top: 10px;
+    font-family: var(--font);
+    text-align:center;
+    margin-left: 20px;
+}
+@media only screen and (min-width:70em){
+    .title{
+        margin-top: 5px;
+        width: 70%;
+        height: 7%;
+        text-align: right;
+    }
+}
+
+.btnSidebar, .btnClose{
+    background: none;
+    border: var(--borders);
+    border-radius: 3px;
+    color: #000;
+    font-size: 20px;
+    height:50px;
+    background-color:#fff;
+}
+.btnSidebar{
+    position: fixed;
+}
+
+@media only screen and (min-width: 64em){
+    .btnSidebar, .btnClose{
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    background-color:#F7F7F7;
+}
+
+@media only screen and (min-width: 70em){
+    .container{
+        height: 100vh;
+    }
+}

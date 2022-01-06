@@ -1,0 +1,13 @@
+.tags{
+    font-size:15px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:#000;
+    padding: 5px 5px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    border: 1px solid rgba(0,0,0,0.2);
+    display:inline-block; 
+    font-weight: normal;
+    border-radius: 3px;
+}

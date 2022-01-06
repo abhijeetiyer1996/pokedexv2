@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
+
+.cardContainer{
+    border: var(--borders);
+    height: 130px;
+    flex-basis: 45%;
+    margin:10px;
+    display: flex;
+    border-radius: 3px;
+    background-color:#f7f7f7;
+    transition: all 0.2s linear;
+}
+@media only screen and (max-width:50em){
+    .cardContainer{
+        width: 95%;
+        flex-basis: 100%;
+    }
+}
+.cardContainer:hover {
+    background-color:#fff;
+    transition: all 0.2s linear;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
+
+}
+.avatar{
+    width: 40%;
+}
+.infoPanel{
+    width: 60%;
+    height: 100%;
+    border-left: 1px solid rgba(0,0,0,0.2)
+}
+.cardImage{
+    /* width: 70%; */
+    height: 70%;
+    display: block;
+    margin:0 auto;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.header{
+    width: 100%;
+    /* float: right; */
+    height: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align:center;
+    color:#000;
+    font-family: var(--font);
+}
+.pokeId{
+    font-weight : 600;
+    display: block;
+    width: 30%;
+    float: right;
+    border-bottom: var(--shadows);
+    border-left: var(--shadows);
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 2px;
+}
+
+.pokeInfo{
+    width: 100%;
+    height: 70%;
+}
+.pokeName{
+    width: 90%;
+    font-size: 13px;
+    margin:0 auto;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.typeContainer{
+    width: 80%;
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.types{
+    font-size:15px;
+    margin-right: 5px;
+    margin-top: 10px;
+    /* background-color:#222; */
+    border-radius:3px;
+    border: var(--shadows);
+    color:#000;
+    padding: 5px 10px;
+    font-family: var(--fonts);
+}
