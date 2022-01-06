@@ -4,7 +4,7 @@ const pokeCards = (props) =>{
     return (
     <div className={classes.cardContainer} onClick = {props.handleClick}>
         <div className={classes.avatar}>
-            <img src={props.image} className={classes.cardImage}/> 
+            <img alt="pokemonImage" src={props.image} className={classes.cardImage}/> 
         </div>
         <div className={classes.infoPanel}>
             <div className={classes.header}>

@@ -1,4 +1,4 @@
-import {useState,useEffect} from "react";
+import {useState} from "react";
 import classes from "./Cockpit.module.css"
 import PokeCards from "../../Components/PokeCards/PokeCards";
 import PokeInfo from "../../Components/PokeInfo/PokeInfo";

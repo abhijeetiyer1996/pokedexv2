@@ -63,7 +63,7 @@ const PokeInfo = ({currentPokemon}) =>{
                             <Tags value = {height}/>
                         </Tags>
                     </div>
-                    <img src={sprites.other['official-artwork'].front_default}/>
+                    <img alt="pokemonImage" src={sprites.other['official-artwork'].front_default}/>
                     <div>
                         <Tags value= "weight">
                             <Tags value = {weight} />
